@@ -1,0 +1,370 @@
+:root {
+  --font-size-larger: 24px;
+  --font-size-large: 18px;
+  --font-size-medium: 15px;
+  --font-size-small: 13px;
+  --font-size-smaller: 11px;
+
+  --space-large: 20px;
+  --space-medium: 16px;
+  --space-small: 10px;
+  --space-smaller: 8px;
+
+  --size-nav-height: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 95vh; */
+  /* overflow: hidden; */
+}
+
+/* 로그인 버튼 */
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  border: 1px solid blue;
+  height: 40px;
+  width: 100px;
+}
+.login-btn:hover {
+  cursor: pointer;
+}
+.login-btn i {
+  margin: 0 var(--space-small);
+}
+.login-btn span {
+  font-size: var(--font-size-medium);
+  margin-right: var(--space-small);
+  white-space: nowrap;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* justify-content: space-between; */
+  /* width: 100vw; */
+  height: 50px;
+}
+
+/* 헤더 햄버거 + 유튜브 로고 */
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  /* baseline initial inherit */
+}
+
+.logo {
+  white-space: nowrap;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.fa-youtube {
+  font-size: var(--font-size-larger);
+  color: red;
+}
+
+.logo span {
+  font-size: var(--font-size-lerge);
+}
+
+.fa-bars {
+  margin: var(--space-large);
+}
+.fa-bars:hover {
+  cursor: pointer;
+}
+
+/* 헤더 중앙 검색바 */
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 100%;
+  /* background-color: inherit; */
+}
+
+.search-form {
+  width: 80%;
+  /* height: var(--font-size-larger); */
+}
+
+.search-form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 80%;
+  padding-left: 4px;
+  height: var(--font-size-larger);
+  /* background-color: white; */
+}
+
+.search-btn {
+  height: var(--font-size-larger);
+  /* flex-basis: 10%; */
+  width: 60px;
+  /* padding: 4px 20px; */
+}
+.search-btn:hover {
+  cursor: pointer;
+}
+
+/* 헤더 오른쪽 버튼들 */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+  width: 40%;
+}
+
+.header-right-btn {
+  padding: var(--space-smaller);
+  margin: var(--space-smaller);
+}
+
+.header-right-search-btn {
+  visibility: hidden;
+  /* width: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.header-right-btn:hover {
+  cursor: pointer;
+}
+
+/* 아래 메뉴(왼쪽메뉴+비디오들) */
+section {
+  /* border: 1px solid red; */
+  display: flex;
+  /* height: 90%; */
+}
+
+/* 왼쪽메뉴 */
+.nav {
+  width: 300px;
+  /* height: 90%; */
+}
+
+.nav_btn-container {
+  padding: 10px 0;
+  border-bottom: 1px solid greenyellow;
+  /* border: 1px solid red; */
+}
+
+.nav_btn {
+  height: var(--size-nav-height);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.nav_btn:hover {
+  cursor: pointer;
+}
+
+.nav-btn-img {
+  padding: 0 20px;
+}
+
+.nav_btn:hover {
+  background-color: greenyellow;
+}
+
+.nav_btn:hover .nav-btn-img {
+  color: red;
+}
+
+.nav_login-explanation,
+.nav-before-login {
+  margin: 0 25px;
+  white-space: nowrap;
+}
+.nav_login-explanation {
+  font-size: var(--font-size-medium);
+  margin-bottom: 10px;
+}
+
+/* 비디오들 컨테이너 */
+.videos-container {
+  /* border: 1px solid blue; */
+  width: 100vw;
+  background-color: #f8fdff;
+  /* height: 90%; */
+}
+
+.video-section-container {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* align-items: space-between; */
+  grid-auto-flow: row;
+  border-bottom: 2px solid green;
+
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.video-container {
+  margin: 8px 8px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  /* width: 100%; */
+  /* margin: 0 10px; */
+}
+
+.video-container:hover .add-list-btn {
+  visibility: inherit;
+}
+
+.video-container video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.video-info {
+  border: 1px solid green;
+  display: flex;
+}
+
+.user-round-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.video-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info-title {
+  width: 1fr;
+  /* border: 1px solid green; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: var(--space-smaller);
+  /* width: 300px; */
+}
+
+.user-name,
+.views {
+  color: grey;
+  font-size: var(--font-size-small);
+}
+
+.add-list-btn-container {
+  margin-top: 5px;
+  width: 80px;
+  height: 30px;
+  /* border: 1px solid green; */
+  /* visibility: hidden; */
+}
+
+.add-list-btn {
+  width: 100%;
+  height: 100%;
+  color: grey;
+  border-style: none;
+  visibility: hidden;
+  /* border: 1px solid green; */
+  background-color: inherit;
+}
+
+.add-list-btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+  .video-section-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 890px) {
+  .video-section-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 660px) {
+  .header-center {
+    visibility: hidden;
+  }
+
+  .header-right-search-btn {
+    visibility: initial;
+    /* width: 0; */
+    padding: var(--space-smaller);
+    margin: var(--space-smaller);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .video-section-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .nav {
+    width: 70px;
+  }
+  .nav_btn span {
+    margin-top: var(--space-smaller);
+    font-size: var(--font-size-smaller);
+    /* width: 0;
+    visibility: hidden; */
+  }
+  .nav_btn {
+    display: flex;
+    flex-direction: column;
+    /* height: 70px; */
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_btn-container {
+    padding: 0;
+    border: none;
+  }
+  .nav_login-container {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .nav {
+    width: 0;
+    visibility: hidden;
+  }
+}

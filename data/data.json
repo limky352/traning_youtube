@@ -1,0 +1,22 @@
+{
+  "videos": [
+    {
+      "vidieo_location": "video/danceCover.mp4",
+      "poster_location": "img/thumbnail1.gif",
+      "user_img_location": "img/userImg.jpg",
+      "video_title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi numquam, rerum harum quo nihil",
+      "user_name": "멜론둥이",
+      "view_count": "1",
+      "upload_time": "6시간 전"
+    },
+    {
+      "vidieo_location": "video/danceCover.mp4",
+      "poster_location": "img/thumbnail1.gif",
+      "user_img_location": "img/userImg.jpg",
+      "video_title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi numquam, rerum harum quo nihil",
+      "user_name": "멜론둥이",
+      "view_count": "0",
+      "upload_time": "6시간 전"
+    }
+  ]
+}

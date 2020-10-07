@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://kit.fontawesome.com/4d4837f22e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="leftTopPositon">
+      <div class="hamberger">
+        <a><i class="fas fa-bars"></i></a>
+        <div class="logo">
+          <i class="fab fa-youtube">YouTube</i>
+        </div>
+      </div>
+
+      <!-- 검색 바 -->
+      <div class="centerPositon">
+        <div class="searchBar">
+          <div class="searchInput">
+            <input type="search" placeholder="검색" />
+            <button class="keyboardBtn">
+              <i class="fas fa-keyboard"></i>
+            </button>
+          </div>
+        </div>
+        <button class="searchButton">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+
+      <div class="rightTopPositon">
+        <div class="create">
+          <i class="fas fa-plus-square"></i>
+        </div>
+        <div class="youtubeApp">
+          <i class="fas fa-th"></i>
+        </div>
+        <div class="settings">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="login">
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+  </header>
+
+  <!-- 왼쪽 메뉴 카테고리 -->
+  <container class="cont">
+    <mn_left class="mn_left">
+      <ul class="menu">
+        <div class="btn"><i class="fas fa-home"></i><span class="btnHome">홈</span></div>
+        <div class="btn"><i class="fab fa-hotjar"></i><span class="btnPop">인기</span></div>
+        <div class="btn"><i class="fas fa-folder-open"></i><span class="btnSub">구독</span></div>
+      </ul>
+    </mn_left>
+    <!-- 오른쪽 비디오 카테고리 -->
+    <mn_videos class="mn_videos">
+      <div class="customizedVideo">
+        <div class="title">맞춤 동영상</div>
+        <item id="videoContainer">
+          <div id="video">
+            <video src="video/danceCover.mp4" class="thumbnail" controls muted width="400px"></video>
+          </div>
+          <div class="videoInfo">
+            <div class="userImg">
+              <img src="img/userImg.jpg" alt="" class="userImgRound" width="40px" height="40px">
+            </div>
+            <div class="videoDataCont">
+              <div class="video_title">Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, deleniti!</div>
+              <div class="channelName">gold</div>
+              <div class="views">10M</div>
+              <div class="uploadTime">2times ago</div>
+            </div>
+          </div>
+        </item>
+      </div>
+      <div class="recommendMovie">
+      </div>
+      <div class="restVideo">
+      </div>
+    </mn_videos>
+  </container>
+</body>
+
+</html>
