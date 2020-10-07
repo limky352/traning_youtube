@@ -18,11 +18,12 @@ app.listen(3000);
 
 const express = require('express');
 const app = express();
+const _template = require('./lib/template.js');
 // const fs = require('fs');
 
 
 //get은 라우팅. 입력된 값에 의해서 어디로 보내줄지 결정하는 역할.
-app.get('/', (req, res) => res.send('/index.html'));
+app.get('/', (req, res) => res.send(_template.HTML()));
 
 
 app.listen(3000, () => console.log('3000포트 시작'));
