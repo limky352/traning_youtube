@@ -1,0 +1,23 @@
+{
+  "name": "traning_youtube",
+  "version": "1.0.0",
+  "description": "# html에 mysql 붙이기 시작",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limky352/traning_youtube.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limky352/traning_youtube/issues"
+  },
+  "homepage": "https://github.com/limky352/traning_youtube#readme"
+}

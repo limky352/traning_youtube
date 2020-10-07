@@ -1,3 +1,4 @@
+/*
 const http = require('http');
 const fs = require('fs');
 const app = http.createServer((request, response) => {
@@ -13,3 +14,15 @@ const app = http.createServer((request, response) => {
 });
 
 app.listen(3000);
+ */
+
+const express = require('express');
+const app = express();
+// const fs = require('fs');
+
+
+//get은 라우팅. 입력된 값에 의해서 어디로 보내줄지 결정하는 역할.
+app.get('/', (req, res) => res.send('/index.html'));
+
+
+app.listen(3000, () => console.log('3000포트 시작'));
