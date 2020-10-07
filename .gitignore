@@ -1,3 +1,7 @@
-node_modules/
+node_modules
+
+
+# files
+README.md
 index3.html
 style3.css
