@@ -1,6 +1,6 @@
-let _template = require('./lib/template')
+// let _template = require('./lib/template')
 
-_template.html();
+// _template.html();
 
 console.log('main.js start');
 function input_video() {
@@ -45,4 +45,3 @@ load_video_data()//
     });
     // .then(console.log('success'))
     // .catch(console.log('fail'));
-
