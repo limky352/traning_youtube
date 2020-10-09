@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="/main.js"></script>
+  <script src="https://kit.fontawesome.com/4d4837f22e.js" crossorigin="anonymous"></script>
+  <title>YouTube</title>
+</head>
+
+<body>
+  <!-- 위 메뉴(헤더) -->
+  <header class="header">
+    <div class="header-left">
+      <!-- 햄버거버튼 -->
+      <a><i class="fas fa-bars"></i></a>
+      <!-- 로고 -->
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
+      </div>
+    </div>
+    <div class="header-center">
+      <form class="search-form" action="/localhost/index2.html" method="GET">
+        <div class="search-form-container">
+          <input class="search-input" type="search" placeholder="검색" />
+          <i class="fas fa-keyboard"></i>
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="header-right">
+      <i class="fas header-right-btn fa-search header-right-search-btn"></i>
+      <!-- 비디오생성 -->
+      <i class="fas header-right-btn fa-plus-square"></i>
+      <!-- 유튜브앱 -->
+      <i class="fas header-right-btn fa-th"></i>
+      <!-- 설정 -->
+      <i class="fas header-right-btn fa-ellipsis-v"></i>
+      <!-- 로그인 -->
+      <div class="login-btn">
+        <i class="fas fa-user"></i>
+        <span>로그인</span>
+      </div>
+      <!-- <button class="login-btn2">
+          <i class="fas header-right-btn fa-user">로그인</i>
+        </button> -->
+    </div>
+  </header>
+
+  <!-- 아래 메뉴(메뉴와 비디오들) -->
+  <!-- 왼쪽메뉴 -->
+  <section>
+    <navigation class="nav">
+      <div class="nav_btn-container">
+        <div class="nav_btn">
+          <i class="fas nav-btn-img fa-home"></i>
+          <span>홈</span>
+        </div>
+        <div class="nav_btn">
+          <i class="fab nav-btn-img fa-hotjar"></i>
+          <span>인기</span>
+        </div>
+        <div class="nav_btn">
+          <i class="fas nav-btn-img fa-folder-open"></i>
+          <span>구독</span>
+        </div>
+      </div>
+      <div class="nav_btn-container">
+        <div class="nav_btn">
+          <i class="fas nav-btn-img fa-folder-open"></i>
+          <span>보관함</span>
+        </div>
+        <div class="nav_btn">
+          <i class="fas nav-btn-img fa-history"></i>
+          <span>시청 기록</span>
+        </div>
+      </div>
+      <div class="nav_btn-container nav_login-container">
+        <div class="nav_login-explanation">
+          로그인하면 동영상에 좋아요<br />를 표시하고 댓글을 달거나
+          <br />구독할 수 있습니다.
+        </div>
+        <div class="nav-before-login login-btn">
+          <i class="fas fa-user"></i>
+          <span>로그인</span>
+        </div>
+      </div>
+    </navigation>
+
+
+
+    <!-- 비디오들 -->
+    <videos class="videos-container">
+      <div class="video-section-container">
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any1" alt="" class="user-round-logo" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail2.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any2" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail3.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any3" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="http://placeimg.com/400/250/thumb1" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any4" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="http://placeimg.com/400/250/thumb2" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any5" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="http://placeimg.com/400/250/thumb3" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any6" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <!--아래 div는 video-section-container-->
+      </div>
+      <div class="video-section-container">
+        <div>뉴스 속보</div>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+        <videoc class="video-container">
+          <video src="video/cheese.mp4" poster="/img/thumbnail1.gif" controls loop muted width="300px"></video>
+          <div class="video-info">
+            <img src="http://placeimg.com/40/40/any" alt="" class="user-round-logo" width="200px" />
+            <div class="video-info-container">
+              <span class="video-info-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sequi numquam, rerum harum quo nihil.
+              </span>
+              <span class="user-name">멜론둥이</span>
+              <span class="views">조회수 2.1만회<span class="upload-time"></span>
+                · 6시간 전</span></span>
+            </div>
+            <div class="add-list-btn-container">
+              <button class="add-list-btn">
+                <i class="fas add-list-btn-img fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </div>
+        </videoc>
+      </div>
+    </videos>
+  </section>
+</body>
+
+</html>
