@@ -17,6 +17,11 @@
   margin: 0;
   padding: 0;
 }
+progress[value]::-webkit-progress-bar {
+  background-color: rgb(204, 39, 176);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
 body {
   display: flex;
